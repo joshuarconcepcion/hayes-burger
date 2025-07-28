@@ -3,18 +3,48 @@ import hayesLogo from './assets/images/hayesLogo.png';
 import hayesBurger from './assets/images/hayesBurger.png';
 
 const header = document.querySelector('header');
-const aboutBtn = document.querySelector('#about');
+const navBtns = document.querySelectorAll('.nav-button');
 const menuBtn = document.querySelector('#menu');
 const mainContent = document.querySelector('#content');
 
 const headerLogo = document.createElement('div');
 headerLogo.id = 'header-logo';
+const logoLink = document.createElement('a');
+logoLink.href = '#';
 const logoImg = new Image();
 logoImg.src = hayesLogo;
-headerLogo.appendChild(logoImg);
+logoLink.appendChild(logoImg);
+headerLogo.appendChild(logoLink);
 header.insertBefore(headerLogo, menuBtn);
 
-const burgerImg = new Image();
-burgerImg.id = 'burger-image';
-burgerImg.src = hayesBurger;
-// mainContent.appendChild(burgerImg);
+const loadHome = () => {
+    const landingPage = document.createElement('div');
+    landingPage.id = 'landing-page';
+    mainContent.appendChild(landingPage);
+
+    const landingImg = document.createElement('div');
+    landingImg.id = 'landing-img';
+    const burgerImg = new Image();
+    burgerImg.id = 'burger-image';
+    burgerImg.src = hayesBurger;
+    landingImg.appendChild(burgerImg);
+    landingPage.appendChild(landingImg);
+}
+
+loadHome();
+
+
+
+/*
+navBtns.forEach(button => {
+    button.addEventListener('click', () => {
+        mainContent.innerHTML = '';
+        const page = button.id.toLowerCase();
+
+        switch (page) {
+            case 'about':
+
+        }
+    })
+})
+*/
