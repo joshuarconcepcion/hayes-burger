@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #FEF2E4;
+}
+
+@font-face {
+    font-family: 'Bubble';
+    src: url('./assets/fonts/Bubble\ Bash.otf');
+}
+
+header {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+    gap: 2rem;
+}
+
+#header-logo img {
+    height: 20vh;
+}
+
+header button {
+    height: 10vh;
+    text-decoration: none;
+    all: unset;
+    cursor: pointer;
+    font-family: 'Bubble';
+    font-size: 2rem;
+    color: #7da87b;
+}
+
