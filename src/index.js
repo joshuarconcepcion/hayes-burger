@@ -1,6 +1,7 @@
 import './style.css';
 import hayesLogo from './assets/images/hayesLogo.png';
 import hayesBurger from './assets/images/hayesBurger.png';
+import loadAbout from './about';
 
 const header = document.querySelector('header');
 const navBtns = document.querySelectorAll('.nav-button');
@@ -18,6 +19,8 @@ headerLogo.appendChild(logoLink);
 header.insertBefore(headerLogo, menuBtn);
 
 const loadHome = () => {
+    mainContent.innerHTML = '';
+
     const landingPage = document.createElement('div');
     landingPage.id = 'landing-page';
     mainContent.appendChild(landingPage);
@@ -33,9 +36,11 @@ const loadHome = () => {
 
 loadHome();
 
+headerLogo.addEventListener('click', () => {
+    loadHome();
+})
 
 
-/*
 navBtns.forEach(button => {
     button.addEventListener('click', () => {
         mainContent.innerHTML = '';
@@ -43,8 +48,7 @@ navBtns.forEach(button => {
 
         switch (page) {
             case 'about':
-
+                loadAbout(mainContent);
         }
     })
 })
-*/

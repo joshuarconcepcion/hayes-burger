@@ -20,6 +20,11 @@ html, body {
     src: url('./assets/fonts/Cooper-Medium.ttf');
 }
 
+@font-face {
+    font-family: 'Zing';
+    src: url('./assets/fonts/ZingRustDemo-Base.otf');
+}
+
 header {
     height: 20%;
     width: 100vw;
@@ -47,7 +52,10 @@ header button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 75vh;
     width: 100vw;
 }
 
+#about-header, #about-content{
+    font-family: 'Zing';
+}
