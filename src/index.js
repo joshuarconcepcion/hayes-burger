@@ -2,6 +2,9 @@ import './style.css';
 import hayesLogo from './assets/images/hayesLogo.png';
 import hayesBurger from './assets/images/hayesBurger.png';
 import loadAbout from './about';
+import loadOrder from './order';
+import loadMerch from './merch';
+import loadMenu from './menu'
 
 const header = document.querySelector('header');
 const navBtns = document.querySelectorAll('.nav-button');
@@ -38,7 +41,7 @@ loadHome();
 
 headerLogo.addEventListener('click', () => {
     loadHome();
-})
+});
 
 
 navBtns.forEach(button => {
@@ -49,6 +52,16 @@ navBtns.forEach(button => {
         switch (page) {
             case 'about':
                 loadAbout(mainContent);
+                break;
+            case 'order':
+                loadOrder(mainContent);
+                break;
+            case 'merch':
+                loadMerch(mainContent);
+                break;
+            case 'menu':
+                loadMenu(mainContent);
+                break;
         }
-    })
-})
+    });
+});
