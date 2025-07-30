@@ -17,11 +17,11 @@ export default function loadAbout(container) {
     const aboutTextContent = document.createElement('p');
     aboutTextContent.id = 'about-content';
     aboutTextContent.innerHTML = `
-    <p>Welcome to Hayes—where good burgers, good vibes, and good people come together.</p>
+    <p>Welcome to Hayes, where good burgers, good vibes, and good people come together.</p>
 
-    <p>Tucked into a cozy corner of the neighborhood, Hayes is a small shop with big flavor. We’re not here to reinvent the wheel—we’re here to make sure it’s grilled to perfection, stacked high, and served with a side of nostalgia.</p>
+    <p>Tucked into a cozy corner of the neighborhood, Hayes is a small shop with big flavor. We’re not here to reinvent the wheel, we’re here to make sure it’s grilled to perfection, stacked high, and served with a side of nostalgia.</p>
     <br>
-    <p>We built Hayes for the community. For the regulars who know their order by heart. For the kids riding up on bikes. For anyone craving a burger that’s just done right—no gimmicks, no shortcuts. Just honest ingredients, scratch-made sauces, and that golden sear that hits different every time.</p>
+    <p>We built Hayes for the community. For the regulars who know their order by heart. For the kids riding up on bikes. For anyone craving a burger that’s just done right. No gimmicks, no shortcuts. Just honest ingredients, scratch-made sauces, and that golden sear that hits different every time.</p>
     <br>
     <p>At Hayes, we keep it simple:<br>
     Burgers. Fries. Sodas.<br>
